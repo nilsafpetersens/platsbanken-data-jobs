@@ -4,7 +4,7 @@
 
 An end-to-end data engineering project that ingests job ads from Platsbanken (the Swedish Public Employment Service's job board), classifies them into data roles, extracts requested skills from the ad text, and serves the result as a Power BI report. Built in Microsoft Fabric.
 
-> 🚧 **Status:** Work in progress. Data exploration is done; the Fabric pipeline is being built.
+> 🚧 **Status:** Work in progress. Historical backfill to the bronze layer is done; the silver layer is next.
 
 ## Questions
 
@@ -59,8 +59,9 @@ Platsbanken does not cover the whole job market. Many tech roles are advertised 
 ## Roadmap
 
 - [x] Explore JobSearch and Historical Ads APIs
-- [ ] Set up Fabric workspace with Git integration
-- [ ] Bronze: backfill + daily ingestion pipeline
+- [x] Set up Fabric workspace and bronze lakehouse (Git sync is disabled in the school's Fabric tenant, so notebooks are exported to [`fabric/`](fabric/))
+- [x] Bronze: historical backfill 2016–2026 (7 search terms, 896 monthly files, 16,458 ads incl. overlap between terms)
+- [ ] Bronze: daily incremental ingestion
 - [ ] Silver: cleaning, deduplication, role classification
 - [ ] Skill extraction (JobAd Enrichments vs. keyword matching)
 - [ ] Gold: star schema
