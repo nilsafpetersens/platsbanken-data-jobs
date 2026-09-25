@@ -62,7 +62,7 @@ Platsbanken does not cover the whole job market. Many tech roles are advertised 
 - [x] Set up Fabric workspace and bronze lakehouse (Git sync is disabled in the school's Fabric tenant, so notebooks are exported to [`fabric/`](fabric/))
 - [x] Bronze: historical backfill 2016–2026 (7 search terms, 896 monthly files, 16,458 ads incl. overlap between terms)
 - [ ] Bronze: daily incremental ingestion
-- [ ] Silver: cleaning, deduplication, role classification
+- [x] Silver: cleaning, deduplication, role classification (13,380 unique ads → 11,718 classified into five roles)
 - [ ] Skill extraction (JobAd Enrichments vs. keyword matching)
 - [ ] Gold: star schema
 - [ ] Power BI report
