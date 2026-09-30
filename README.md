@@ -63,7 +63,7 @@ Platsbanken does not cover the whole job market. Many tech roles are advertised 
 - [x] Bronze: historical backfill 2016–2026 (7 search terms, 896 monthly files, 16,458 ads incl. overlap between terms)
 - [ ] Bronze: daily incremental ingestion
 - [x] Silver: cleaning, deduplication, role classification (13,380 unique ads → 11,718 classified into five roles)
-- [ ] Skill extraction (JobAd Enrichments vs. keyword matching)
+- [x] Skill extraction (46 skills matched against ad headline + description)
 - [ ] Gold: star schema
 - [ ] Power BI report
 - [ ] Data quality checks and documentation
