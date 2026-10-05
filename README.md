@@ -64,7 +64,7 @@ Platsbanken does not cover the whole job market. Many tech roles are advertised 
 - [ ] Bronze: daily incremental ingestion
 - [x] Silver: cleaning, deduplication, role classification (13,380 unique ads → 11,718 classified into five roles)
 - [x] Skill extraction (46 skills matched against ad headline + description)
-- [ ] Gold: star schema
+- [x] Gold: star schema (fact_ad, bridge table fact_ad_skill, five dimensions) and semantic model with documented measures ([`fabric/semantic_model.md`](fabric/semantic_model.md))
 - [ ] Power BI report
 - [ ] Data quality checks and documentation
 
