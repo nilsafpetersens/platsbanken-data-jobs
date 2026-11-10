@@ -70,6 +70,7 @@ flowchart LR
 | Gold | [`nb_04_gold_star_schema`](fabric/nb_04_gold_star_schema.ipynb) | Star schema: `fact_ad`, bridge `fact_ad_skill`, five dimensions |
 | Semantic model | [`semantic_model.md`](fabric/semantic_model.md) | Relationships and DAX measures |
 | Orchestration | [`pl_daily_refresh.json`](fabric/pl_daily_refresh.json) | Fabric pipeline running bronze → silver → gold every day at 06:00 |
+| Export | [`nb_06_export_gold`](fabric/nb_06_export_gold.ipynb) | Gold tables as CSV in [`data/`](data/) |
 
 Each notebook starts with design notes explaining its decisions, and ends with checks that fail the run if the output is wrong. In the pipeline, each step only runs if the previous one succeeded, so a failed check stops bad data from reaching the report.
 
@@ -80,6 +81,13 @@ Each notebook starts with design notes explaining its decisions, and ends with c
 - **Snapshots, not deltas.** Each run stores everything open right now. A missed day is caught up the next day, and comparing snapshots shows when an ad was taken down (`first_seen`, `last_seen`, `is_open` in silver).
 - **Incremental ingestion, full-refresh transformation.** Bronze only adds files; silver and gold are rebuilt from all of bronze each run (~7 minutes in total), so a change to the classification rules applies to the whole history at once.
 - **Known gap:** the backfill ends in August 2026 and the first snapshot holds only ads still open on 2026-11-03, so September–October ads that had already closed are missing.
+
+## Data and report files
+
+The project ran on a Fabric trial capacity, so everything needed to explore the results is kept in the repo:
+
+- [`data/`](data/): the seven gold tables as CSV (UTF-8, comma-separated, decimal point). Together they form the star schema described in [`semantic_model.md`](fabric/semantic_model.md).
+- [`data/platsbanken_data_jobs.pbix`](data/platsbanken_data_jobs.pbix): the report rebuilt in Power BI Desktop on the CSV files, in import mode. The data is stored in the file, so it opens and works without any connection. To refresh it from the CSV files, point the source paths to your copy of `data/` (*Transform data* → *Data source settings* → *Change source*).
 
 ## Key design decisions
 
@@ -119,7 +127,8 @@ Problems found and fixed during the project, documented in the notebooks:
 - [x] Gold: star schema and semantic model
 - [x] Power BI report
 - [x] Daily snapshot pipeline, scheduled in Fabric
-- [ ] Export report as `.pbix` and record a short walkthrough
+- [x] Export gold tables as CSV and the report as `.pbix`
+- [ ] Record a short walkthrough
 
 ## Author
 
