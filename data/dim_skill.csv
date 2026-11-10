@@ -1,0 +1,47 @@
+skill,category,skill_key
+A/B testing,Method,1
+AWS,Cloud,2
+Airflow,Engineering,3
+Azure,Cloud,4
+C#,Language,5
+Cognos,BI,6
+DAX,Language,7
+Data modelling,Engineering,8
+Data warehouse,Engineering,9
+Databricks,Cloud,10
+Deep learning,Method,11
+Docker,Engineering,12
+ETL/ELT,Engineering,13
+Excel,Analysis,14
+GCP,Cloud,15
+Git,Engineering,16
+Hadoop,Engineering,17
+Java,Language,18
+Kafka,Engineering,19
+Kubernetes,Engineering,20
+Looker,BI,21
+Machine learning,Method,22
+Matlab,Analysis,23
+Microsoft Fabric,Cloud,24
+MongoDB,Database,25
+NLP,Method,26
+Oracle,Database,27
+PostgreSQL,Database,28
+Power BI,BI,29
+Python,Language,30
+Qlik,BI,31
+R,Language,32
+SAP,Database,33
+SAS,Analysis,34
+SPSS,Analysis,35
+SQL,Language,36
+SSIS/SSAS/SSRS,BI,37
+Scala,Language,38
+Snowflake,Cloud,39
+Spark,Engineering,40
+Stata,Analysis,41
+Statistics,Method,42
+Synapse,Cloud,43
+Tableau,BI,44
+Terraform,Engineering,45
+dbt,Engineering,46

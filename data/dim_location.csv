@@ -1,0 +1,132 @@
+region,municipality,location_key
+Blekinge län,Karlshamn,1
+Blekinge län,Karlskrona,2
+Dalarnas län,Borlänge,3
+Dalarnas län,Falun,4
+Dalarnas län,Hedemora,5
+Dalarnas län,Leksand,6
+Dalarnas län,Ludvika,7
+Dalarnas län,Smedjebacken,8
+Gotlands län,Gotland,9
+Gävleborgs län,Gävle,10
+Gävleborgs län,Hofors,11
+Gävleborgs län,Hudiksvall,12
+Gävleborgs län,Ljusdal,13
+Gävleborgs län,Ockelbo,14
+Gävleborgs län,Sandviken,15
+Gävleborgs län,Söderhamn,16
+Hallands län,Falkenberg,17
+Hallands län,Halmstad,18
+Hallands län,Kungsbacka,19
+Hallands län,Varberg,20
+Jämtlands län,Åre,21
+Jämtlands län,Östersund,22
+Jönköpings län,Gislaved,23
+Jönköpings län,Habo,24
+Jönköpings län,Jönköping,25
+Jönköpings län,Värnamo,26
+Kalmar län,Kalmar,27
+Kalmar län,Nybro,28
+Kalmar län,Oskarshamn,29
+Kronobergs län,Ljungby,30
+Kronobergs län,Markaryd,31
+Kronobergs län,Växjö,32
+Kronobergs län,Älmhult,33
+Norrbottens län,Boden,34
+Norrbottens län,Gällivare,35
+Norrbottens län,Kiruna,36
+Norrbottens län,Luleå,37
+Ospecificerad arbetsort,Unknown,38
+Skåne län,Burlöv,39
+Skåne län,Helsingborg,40
+Skåne län,Hässleholm,41
+Skåne län,Höganäs,42
+Skåne län,Kristianstad,43
+Skåne län,Kävlinge,44
+Skåne län,Lomma,45
+Skåne län,Lund,46
+Skåne län,Malmö,47
+Skåne län,Perstorp,48
+Skåne län,Svedala,49
+Skåne län,Trelleborg,50
+Skåne län,Vellinge,51
+Skåne län,Ängelholm,52
+Skåne län,Åstorp,53
+Stockholms län,Botkyrka,54
+Stockholms län,Danderyd,55
+Stockholms län,Ekerö,56
+Stockholms län,Haninge,57
+Stockholms län,Huddinge,58
+Stockholms län,Järfälla,59
+Stockholms län,Lidingö,60
+Stockholms län,Nacka,61
+Stockholms län,Norrtälje,62
+Stockholms län,Sigtuna,63
+Stockholms län,Sollentuna,64
+Stockholms län,Solna,65
+Stockholms län,Stockholm,66
+Stockholms län,Sundbyberg,67
+Stockholms län,Södertälje,68
+Stockholms län,Tyresö,69
+Stockholms län,Täby,70
+Stockholms län,Upplands Väsby,71
+Stockholms län,Upplands-Bro,72
+Södermanlands län,Eskilstuna,73
+Södermanlands län,Flen,74
+Södermanlands län,Katrineholm,75
+Södermanlands län,Nyköping,76
+Södermanlands län,Oxelösund,77
+Unknown,Unknown,78
+Uppsala län,Enköping,79
+Uppsala län,Knivsta,80
+Uppsala län,Tierp,81
+Uppsala län,Uppsala,82
+Uppsala län,Älvkarleby,83
+Uppsala län,Östhammar,84
+Värmlands län,Hagfors,85
+Värmlands län,Karlstad,86
+Värmlands län,Kristinehamn,87
+Värmlands län,Säffle,88
+Västerbottens län,Lycksele,89
+Västerbottens län,Nordmaling,90
+Västerbottens län,Norsjö,91
+Västerbottens län,Skellefteå,92
+Västerbottens län,Umeå,93
+Västerbottens län,Vännäs,94
+Västernorrlands län,Härnösand,95
+Västernorrlands län,Sollefteå,96
+Västernorrlands län,Sundsvall,97
+Västernorrlands län,Timrå,98
+Västernorrlands län,Örnsköldsvik,99
+Västmanlands län,Fagersta,100
+Västmanlands län,Hallstahammar,101
+Västmanlands län,Köping,102
+Västmanlands län,Västerås,103
+Västra Götalands län,Borås,104
+Västra Götalands län,Falköping,105
+Västra Götalands län,Göteborg,106
+Västra Götalands län,Götene,107
+Västra Götalands län,Herrljunga,108
+Västra Götalands län,Härryda,109
+Västra Götalands län,Lidköping,110
+Västra Götalands län,Lysekil,111
+Västra Götalands län,Mariestad,112
+Västra Götalands län,Mölndal,113
+Västra Götalands län,Partille,114
+Västra Götalands län,Skövde,115
+Västra Götalands län,Stenungsund,116
+Västra Götalands län,Trollhättan,117
+Västra Götalands län,Uddevalla,118
+Västra Götalands län,Ulricehamn,119
+Västra Götalands län,Vara,120
+Västra Götalands län,Vänersborg,121
+Västra Götalands län,Vårgårda,122
+Västra Götalands län,Åmål,123
+Örebro län,Hällefors,124
+Örebro län,Karlskoga,125
+Örebro län,Örebro,126
+Östergötlands län,Boxholm,127
+Östergötlands län,Finspång,128
+Östergötlands län,Linköping,129
+Östergötlands län,Mjölby,130
+Östergötlands län,Norrköping,131
