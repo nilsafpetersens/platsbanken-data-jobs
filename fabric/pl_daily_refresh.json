@@ -1,0 +1,95 @@
+{
+    "name": "pl_daily_refresh",
+    "objectId": "cac92a53-ac29-4203-87e5-c894e74404f7",
+    "properties": {
+        "activities": [
+            {
+                "name": "bronze_daily",
+                "type": "TridentNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.00:30:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "a9de0dff-b971-4395-81c3-27c63b17a371",
+                    "workspaceId": "903548b0-9945-4a42-9830-649025f8f5aa"
+                }
+            },
+            {
+                "name": "silver_ads",
+                "type": "TridentNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "bronze_daily",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.00:30:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "d3f2b25f-01d8-41c4-93f2-628c32f9745e",
+                    "workspaceId": "903548b0-9945-4a42-9830-649025f8f5aa"
+                }
+            },
+            {
+                "name": "silver_skills",
+                "type": "TridentNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "silver_ads",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.00:30:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "a4e6ae70-ddde-45d4-89f2-b8795e0d559a",
+                    "workspaceId": "903548b0-9945-4a42-9830-649025f8f5aa"
+                }
+            },
+            {
+                "name": "gold",
+                "type": "TridentNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "silver_skills",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.00:30:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "typeProperties": {
+                    "notebookId": "c723b128-fdc7-4606-9dc1-794b4d42879b",
+                    "workspaceId": "903548b0-9945-4a42-9830-649025f8f5aa"
+                }
+            }
+        ],
+        "lastModifiedByObjectId": "29e9b987-c45a-45a6-a509-3fb854eb3d5a",
+        "lastPublishTime": "2026-11-04T13:07:10Z"
+    }
+}
